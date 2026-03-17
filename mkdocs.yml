@@ -1,0 +1,127 @@
+site_name: "Data Engineering: Internals and Architecture"
+site_author: Atul Rana
+site_description: A comprehensive guide covering both 2026 Agentic AI Infrastructure (Distinguished Engineer level) and foundational Data Engineering concepts.
+
+repo_url: https://github.com/atulRanaa/data-engineering
+repo_name: atulRanaa/data-engineering
+
+theme:
+  name: material
+  icon:
+    logo: material/robot-outline
+    repo: fontawesome/brands/github
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/atulRanaa/data-engineering
+
+nav:
+  - Home: index.md
+  - "The Hall of Fame":
+    - "Top 10 Papers in History": papers/top-papers.md
+  - "The 2026 Architecture (Advanced)":
+    - "Part I: Fundamentals of 2026":
+      - "01. Physics of AI Agents": advanced/01-physics-of-ai.md
+      - "02. Vector DBs vs. SQL": advanced/02-vector-dbs-vs-sql.md
+      - "03. Edge Computing & 6G": advanced/03-edge-computing-6g.md
+    - "Part II: Distributed Evolution":
+      - "04. The Shift to Shared-Storage": advanced/04-shift-to-shared-storage.md
+      - "05. Consensus & Failure Scenarios": advanced/05-consensus-and-failure.md
+    - "Part III: Agentic AI":
+      - "06. Rise of Agentic AI": advanced/06-rise-of-agentic-ai.md
+      - "07. Multi-Agent Infrastructure": advanced/07-multi-agent-infrastructure.md
+    - "Part IV: Deep Internals & Code":
+      - "08. Kafka Internals": advanced/08-kafka-internals.md
+      - "09. Spark Catalyst Optimizer": advanced/09-spark-catalyst.md
+      - "10. Lakehouse Commit Logs": advanced/10-lakehouse-commits.md
+    - "Part V: Unpacking the Titans":
+      - "11. Deconstructing OpenAI": advanced/11-deconstructing-openai.md
+      - "12. Deconstructing Nvidia": advanced/12-deconstructing-nvidia.md
+      - "13. Deconstructing Google": advanced/13-deconstructing-google.md
+  - "The Fundamentals (Basics)":
+    - "Part VI: Basic Engineering":
+      - 1. Data Fundamentals: basics/01-data-fundamentals.md
+      - 2. Storage & File Systems: basics/02-data-storage-and-file-systems.md
+      - 3. Database Systems: basics/03-database-systems.md
+      - 4. Processing Engines: basics/04-data-processing-engines.md
+      - 5. Pipelines & Orchestration: basics/05-data-pipelines-and-orchestration.md
+      - 6. Architecture Patterns: basics/06-data-architecture-patterns.md
+      - 7. Distributed Systems: basics/07-distributed-systems-and-scaling.md
+      - 8. Governance & Security: basics/08-data-governance-and-security.md
+      - 9. Observability & Testing: basics/09-observability-and-testing.md
+      - 10. Formats & Performance: basics/10-data-formats-and-performance.md
+      - 11. Case Studies: basics/11-real-world-case-studies.md
+      - 12. Emerging Technologies: basics/12-emerging-technologies-and-trends.md
+      - 13. Conclusion: basics/13-conclusion-and-future-outlook.md
+    - "Part VII: Basic Deep Dives":
+      - Apache Kafka: basics/deep-dives/apache-kafka.md
+      - Apache Spark: basics/deep-dives/apache-spark.md
+      - Apache Flink: basics/deep-dives/apache-flink.md
+      - Apache Airflow: basics/deep-dives/apache-airflow.md
+      - Cassandra: basics/deep-dives/cassandra.md
+      - Delta Lake: basics/deep-dives/delta-lake.md
+      - Amazon S3: basics/deep-dives/amazon-s3.md

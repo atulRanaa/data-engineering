@@ -1,2 +1,26 @@
-.idea
-target
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# MkDocs
+site/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary code/test directories
+target/
+.pytest_cache/
+.coverage
